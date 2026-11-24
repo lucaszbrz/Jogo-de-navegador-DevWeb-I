@@ -1,0 +1,30 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #12343b;
+  color: #fffaf0;
+  text-align: center;
+  margin: 0;
+  padding: 24px 12px;
+}
+
+#tabuleiro {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  max-width: 360px;
+  margin: 20px auto;
+}
+
+.carta {
+  aspect-ratio: 1;
+  font-size: 2rem;
+  border: none;
+  border-radius: 10px;
+  background: #f4d35e;
+  color: #12343b;
+  cursor: pointer;
+}
+
+.carta.virada {
+  background: #fffaf0;
+}
